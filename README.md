@@ -15,6 +15,18 @@ RESTful Resources:
 	
 	2) GET					http://localhost:3000/project/1
 	
+	4) PUT 				http://localhost:3000/project/1
+	
+							[N.B: /{Id} is necessary in URL path. ]
+	
+							{
+								"id":1,
+								"name":"Order Management System"
+							}
+							
+	5) DELETE				http://localhost:3000/project/1
+	
+	
 
 Install Mongo DB
 ------------------
