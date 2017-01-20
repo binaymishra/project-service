@@ -27,6 +27,17 @@ RESTful Resources:
 	5) DELETE				http://localhost:3000/project/1
 	
 	
+	
+	String Id
+	
+	6) POST 				http://localhost:3000/project
+	
+							{
+ 								"id":"4",
+ 								"name":"J&J"
+							}
+	
+	
 
 Install Mongo DB
 ------------------
