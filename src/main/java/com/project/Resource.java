@@ -1,19 +1,17 @@
 package com.project;
 
-import java.util.List;
-
 import org.springframework.data.annotation.Id;
 
-public class Project {
+public class Resource {
 	
 	@Id
 	String id;
 	
 	String name;
 	
-	List<Resource> resources;
+	String designation;
 	
-	public Project() {	}
+	public Resource() {	}
 
 	public String getId() {
 		return id;
@@ -30,18 +28,17 @@ public class Project {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	public List<Resource> getResources() {
-		return resources;
+
+	public String getDesignation() {
+		return designation;
 	}
 
-	public void setResources(List<Resource> resources) {
-		this.resources = resources;
+	public void setDesignation(String designation) {
+		this.designation = designation;
 	}
 
 	@Override
 	public String toString() {
-		return "Project [id=" + id + ", name=" + name + "]";
+		return "Resource [id=" + id + ", name=" + name + ", designation=" + designation + "]";
 	}
-	
 }
