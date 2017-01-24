@@ -1,0 +1,26 @@
+
+    {
+        "id": "1",
+        "name": "Walmart Americas",
+        "resources":
+        [
+            {
+                "id": "1",
+                "name": "Binay Mishra"
+            }
+        ]
+    }
+
+
+
+{
+        "id": "2",
+        "name": "P&G",
+        "resources":
+        [
+            {
+                "id": "2",
+                "name": "Binay Mishra"
+            }
+        ]
+    }
