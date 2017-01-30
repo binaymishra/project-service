@@ -4,6 +4,8 @@ import java.net.URI;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.Sort.Direction;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
@@ -40,7 +42,7 @@ public class ProjectRestController {
 	
 	@GetMapping
 	ResponseEntity<List<Project>> findAllProjects(){
-		List<Project> projects = projectRepository.findAll();
+		List<Project> projects = projectRepository.findAll(new Sort(Direction.ASC, "name"));
 		if(CollectionUtils.isEmpty(projects))
 			return ResponseEntity.notFound().build();
 		return ResponseEntity.ok(projects);
